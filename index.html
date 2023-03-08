@@ -6,16 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Form</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            text-align: center;
+            background-color:whitesmoke;
+        }
+        input{
+            width: 400px;
+            height: 40px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .bnt{
+            background: rgb(73, 73, 151);
+            color: whitesmoke;
+        }
+        marquee{
+            background-color: green;
+            border-radius: 12px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border: solid 2px black;
+        }
+    </style>
 </head>
 <body>
+    <h2><marquee behavior="" direction=""> <h1 class="write"> ...WELLCOME...TO...MY...LOGIN...PAGE..</h1></marquee></h2>
     <h1>Create your Account</h1>
-    <form>
+    <form action="index1.html">
         <input type="text" placeholder="First Name" class="box"> <input type="text" placeholder="Last Name"  class="box"><br><br>
         <input type="text" placeholder="Username"  class="box"> <input type="password" placeholder="Password"  class="box"><br><br>
         <h2>Select your Gender</h2>
-        <input type="radio" name="a">Male<input type="radio" name="a">Female<br><br>
+        <input  class="gender"type="radio" name="a">Male<input type="radio" name="a">Female<br><br>
         <input type="text" placeholder="Residential Address" class="box"> <input type="text" placeholder="Permanent Address" class="box"><br><br><br>
-        <input type="submit" value="Create Account" class="button">
+        <input class="bnt" type="submit" value="Create Account" class="button"><input class="bnt" type="reset" value="Click to reset" class="button"><br>
     </form>
     
 </body>
